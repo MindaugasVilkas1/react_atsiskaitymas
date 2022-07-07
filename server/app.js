@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import fetch from 'node-fetch'
+import bcrypt from 'bcrypt';
 
 //
 const app = express()
@@ -17,10 +18,31 @@ app.get("/api/blog", async (req, res) => {
 app.post("/api/blog", async (req, res) => {
     try {
         console.log(req.body)
+       
         const response = await fetch('http://localhost:8080/blog', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(req.body)
+        })
+        res.send(response)
+    } catch (err) {
+        res.send({ err })
+        console.log(err)
+    }
+});
+// register add user
+app.post("/api/user", async (req, res) => {
+    try {
+        console.log(req.body)
+        const hashedPass = await bcrypt.hash(req.body.password, 10)
+        const reg = {
+            email: req.body.email,
+            password: hashedPass
+        }
+        const response = await fetch('http://localhost:8080/user', {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(reg)
         })
         res.send(response)
     } catch (err) {

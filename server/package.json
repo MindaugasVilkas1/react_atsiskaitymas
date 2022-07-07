@@ -6,12 +6,13 @@
   "main": "app.js",
   "scripts": {
     "dev": "nodemon",
-    "db":"json-server data/data.json --watch --port 8080"
+    "db": "json-server data/data.json --watch --port 8080"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",

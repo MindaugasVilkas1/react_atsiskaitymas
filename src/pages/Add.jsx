@@ -18,7 +18,7 @@ const Add = () => {
             description: e.target.elements.description.value,
         }
         setIsPending(true)
-        fetch('http://localhost:8080/blog', {
+        fetch('http://localhost:5000/api/blog', {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(blog)

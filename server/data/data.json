@@ -4,6 +4,21 @@
       "id": 1,
       "email": "mindaugas@gmail.com",
       "password": "Abcd1234"
+    },
+    {
+      "email": "mindaugas@gmail.com",
+      "password": "abcd1234",
+      "id": 2
+    },
+    {
+      "email": "julija@gmail.com",
+      "password": "abcd1234",
+      "id": 3
+    },
+    {
+      "email": "mindaugas@gmail.com",
+      "password": "$2b$10$yd1eW6rSlX.4hKeaHH.9UOsmEB6evkeiml4Z6xJ8KrSq53Q.ROMEq",
+      "id": 4
     }
   ],
   "blog": [
@@ -16,6 +31,16 @@
       "title": "Create a Successful Blog - Top Blog Platform 2022",
       "description": "Build Your Own Free Blog. No Technical Skills Needed. Choose a Blog Builder. Start Now! It's Easy. Compare the Best Blog Builders and Choose Yours. Create a Free Blog Today!",
       "id": 2
+    },
+    {
+      "title": "How to Build a Blog in 3 Simple Steps | Bluehost Resource Center",
+      "description": "Make your blog truly your own with advanced web features. Start your blog today! Powering Over 2 Million Websites Worldwide. #1 In Speed and Security. Get Started. Free Domain. Free SSL. Easy Step-By-Step Set Up. All-In-One Platform. 1-Click WordPress Install.\n",
+      "id": 3
+    },
+    {
+      "title": "Our 8-Step Guide for How to Write a Pro Blog Post",
+      "description": "Online Grammar and Writing Checker To Help You Deliver Impeccable, Mistake-free Writing. Grammarly Has a Tool For Just About Every Kind Of Writing You Do. Try It Out For Yourself!\n",
+      "id": 4
     }
   ]
 }

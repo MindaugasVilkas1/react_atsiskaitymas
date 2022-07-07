@@ -17,7 +17,7 @@ const Home = () => {
 
     const getData = () => {
         //fetch get data
-        fetch('http://localhost:8080/blog')
+        fetch('http://localhost:5000/api/blog')
             .then((res) => {
                 if (!res.ok) {
                     throw Error('could not fetch the data for that resource')
