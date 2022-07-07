@@ -1,0 +1,16 @@
+{
+    "user": [
+      {
+        "id": 1,
+        "email": "mindaugas@gmail.com",
+        "password": "Abcd1234"
+      }
+    ],
+    "blog": [
+      {
+        "id": 1,
+        "title": "How To Create A Blog - MailerLite",
+        "description":"Grow Your Business with MailerLite! MailerLite helps your business grow through easy-to-use email marketing tools & resources. Free Email Automation."
+      }
+    ]
+  }
