@@ -5,6 +5,7 @@ import styles from '../styles/form.module.css'
 import Button from "../components/Button";
 import {Link} from 'react-router-dom'
 const Login = () => {
+    
     return (
         <>
             <Nav
@@ -31,7 +32,9 @@ const Login = () => {
                         required
                         name="password"
                     />
-                    <Button />
+                    <Button
+                    title="Login"
+                    />
                 </form>
             </div>
         </>

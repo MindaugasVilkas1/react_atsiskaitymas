@@ -1,16 +1,21 @@
 {
-    "user": [
-      {
-        "id": 1,
-        "email": "mindaugas@gmail.com",
-        "password": "Abcd1234"
-      }
-    ],
-    "blog": [
-      {
-        "id": 1,
-        "title": "How To Create A Blog - MailerLite",
-        "description":"Grow Your Business with MailerLite! MailerLite helps your business grow through easy-to-use email marketing tools & resources. Free Email Automation."
-      }
-    ]
-  }
+  "user": [
+    {
+      "id": 1,
+      "email": "mindaugas@gmail.com",
+      "password": "Abcd1234"
+    }
+  ],
+  "blog": [
+    {
+      "id": 1,
+      "title": "How To Create A Blog - MailerLite",
+      "description": "Grow Your Business with MailerLite! MailerLite helps your business grow through easy-to-use email marketing tools & resources. Free Email Automation."
+    },
+    {
+      "title": "Create a Successful Blog - Top Blog Platform 2022",
+      "description": "Build Your Own Free Blog. No Technical Skills Needed. Choose a Blog Builder. Start Now! It's Easy. Compare the Best Blog Builders and Choose Yours. Create a Free Blog Today!",
+      "id": 2
+    }
+  ]
+}

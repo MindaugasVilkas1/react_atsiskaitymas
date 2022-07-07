@@ -1,7 +1,9 @@
 import styles from '../styles/Button.module.css'
-const Button = () => {
+const Button = ({title}) => {
     return ( 
-        <button className={styles.button}>Submit</button>
+        <button className={styles.button}>
+            {title}
+        </button>
      );
 }
  

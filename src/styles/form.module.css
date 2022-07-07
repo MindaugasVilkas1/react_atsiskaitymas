@@ -3,6 +3,8 @@
     display: block;
     width: 300px;
     height:320px;
+    border:2px solid grey;
+    border-radius: 3px;
 }
 form label, input{
     display: flex;
@@ -11,4 +13,11 @@ form label, input{
     height: 40px;
     border-radius: 5px;
     margin-left:5px ;
+
+}
+form textarea{
+    width: 90%;
+    height: 80px;
+    margin-left:5px ;
+    border-radius: 5px;
 }

@@ -24,20 +24,15 @@ const Register = () => {
                         name="email"
 
                     />
-                    <label>Repeat Email</label>
-                    <input
-                        type="text"
-                        required
-                        name="email"
-
-                    />
                     <label>Password</label>
                     <input
                         type="text"
                         required
                         name="password"
                     />
-                    <Button />
+                    <Button
+                    title="Register"
+                    />
                 </form>
             </div>
         </>
