@@ -3,13 +3,17 @@ import img from '../images/logo.jpg'
 import style from '../styles/registration.module.css'
 import styles from '../styles/form.module.css'
 import Button from "../components/Button";
+import {Link} from 'react-router-dom'
 const Login = () => {
-    return ( 
+    return (
         <>
-        <Nav
-        img={img}
-        />
-        <div className={style.registration}>
+            <Nav
+                img={img}
+                link1={<Link to={'/login'}>Login</Link>}
+                link2={<Link to={'/'}>Register</Link>}
+
+            />
+            <div className={style.registration}>
                 <div className={style.registerTitle}>
                     <h2>Login</h2>
                 </div>
@@ -31,8 +35,8 @@ const Login = () => {
                 </form>
             </div>
         </>
-        
-     );
+
+    );
 }
- 
+
 export default Login;

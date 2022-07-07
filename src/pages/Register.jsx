@@ -3,12 +3,14 @@ import style from '../styles/registration.module.css'
 import img from '../images/logo.jpg'
 import Button from "../components/Button"
 import Nav from '../components/nav'
-
+import {Link} from 'react-router-dom'
 const Register = () => {
     return (
         <>
         <Nav
         img={img}
+        link1={<Link to={'/login'}>Login</Link>}
+        link2={<Link to={'/'}>Register</Link>}
         />
             <div className={style.registration}>
                 <div className={style.registerTitle}>
