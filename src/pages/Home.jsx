@@ -45,17 +45,22 @@ const Home = () => {
                 <h1>Blogs</h1>
                 {error && <div>{error}</div>}
                 {isPending && <div> Loading... </div>}
-                <div className={styles.cards}>
-                {data ?
-                 data.map(blog => (
-                <BlogList
-                key={blog.id}
-                blog={blog}
-                />
-                 ))
-                 : <div>The is no data</div>  
+                {data?.length
+                    ? (
+                        <div className={styles.cards}>
+                            {data.map(blog =>
+                                <BlogList
+                                    key={blog.id}
+                                    blog={blog}
+                                />
+                            )
+                            }
+                        </div>
+                    ) : <div className={styles.noData}>
+                        <h1>No Data to display</h1>
+                    </div>
                 }
-                </div>
+
             </div>
 
         </div>
