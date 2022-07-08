@@ -8,6 +8,7 @@
 .cards{
    display: flex;
    justify-content: space-around;
+   flex-wrap: wrap;
    gap:10px;
 }
 .card{
@@ -23,6 +24,14 @@
     margin: 0 auto;
 }
 .noData h1{
+    text-align: center;
+    color:grey;
+}
+.loading{
+    width: 90%;
+    margin: 0 auto;
+}
+.loading h1{
     text-align: center;
     color:grey;
 }

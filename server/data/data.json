@@ -1,24 +1,9 @@
 {
   "user": [
     {
-      "id": 1,
       "email": "mindaugas@gmail.com",
-      "password": "Abcd1234"
-    },
-    {
-      "email": "mindaugas@gmail.com",
-      "password": "abcd1234",
-      "id": 2
-    },
-    {
-      "email": "julija@gmail.com",
-      "password": "abcd1234",
-      "id": 3
-    },
-    {
-      "email": "mindaugas@gmail.com",
-      "password": "$2b$10$Z60YhO4b.Z6EqbOZHgq1CO9qQjFFk.PCzY4R735bmjJF7SG58e2yi",
-      "id": 5
+      "password": "$2b$10$E2pUJqGUFoadRH7qm5vVUOhqHkCu5RSUkzpJ9LsrA0LWKn5tdWyYG",
+      "id": 1
     }
   ],
   "blog": [

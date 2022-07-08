@@ -3,14 +3,31 @@ import { Link } from "react-router-dom";
 import img from '../images/logo.jpg'
 import styles from '../styles/form.module.css'
 import Button from "../components/Button";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom'
 import style from '../styles/addPage.module.css'
 
 // poss Content
 const Add = () => {
+    const navigate = useNavigate()
+    useEffect(() => {
+        const token = localStorage.getItem('Token');
+        fetch('http://localhost:5000/api/verify', {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        })
+            .then(res => res.json())
+            .then(res => {
+                if (res.err) {
+                    localStorage.removeItem('Token');
+                    return navigate('/');
+                }
+            }
+            )
+    },[navigate])
+
     const [isPending, setIsPending] = useState(false)
-    let navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault()
         const blog = {
@@ -24,7 +41,7 @@ const Add = () => {
             body: JSON.stringify(blog)
         })
             .then(() => {
-                console.log('new blog added')
+                alert('new blog added')
                 setIsPending(false)
                 navigate('/home')
             })
